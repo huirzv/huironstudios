@@ -768,11 +768,20 @@
                 const universeIds = gameConfig.games.map(game => game.universeId).join(',');
                 
                 // Try multiple CORS proxy services
-                const proxies = [
-                    'https://api.allorigins.win/raw?url=',
-                    'https://corsproxy.io/?',
-                    'https://cors.sh/'
-                ];
+const proxies = [
+  'https://api.allorigins.win/raw?url=',
+  'https://corsproxy.io/?',
+  'https://cors.sh/',
+  'https://thingproxy.freeboard.io/fetch/',
+  'https://api.codetabs.com/v1/proxy/?quest=',
+  'https://yacdn.org/proxy/',
+  'https://proxy.cors.sh/',
+  'https://crossorigin.me/'
+  'https://cors-proxy.htmldriven.com/?url=',
+  'https://corsproxy.openode.io/',
+  'https://jsonp.afeld.me/?url=',
+  'https://api.allorigins.win/get?url='
+];
                 
                 const targetUrl = `http://45.131.65.40:25587/stats/${universeIds}`;
                 let data = null;
@@ -934,6 +943,7 @@
     </script>
 </body>
 </html>
+
 
 
 
